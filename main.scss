@@ -118,10 +118,19 @@ main {
     margin: 15px auto;
 }
 
-.profile2 {
-    border-bottom: solid 1px #ddd;
+.profile {
     display: flex;
     flex-wrap: wrap;
+}
+
+.name {
+    border-bottom: solid 1px #ddd;
+    width: 100%;
+}
+
+.profile2 {
+    width: 100%;
+    max-width: 400px; // うまくいかないのでとりあえずいれたやつ。後で消す。
     align-items: flex-end;
     padding-bottom: 15px;
     margin-bottom: 15px;
