@@ -86,7 +86,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 8px 12px #ddd;
     margin: 15px;
-    width: 250px;
+    width: 200px;
     color: #72b483;
     height: 50px;
 }
@@ -119,11 +119,23 @@ main {
     margin: 15px auto;
 }
 
-.profile2 {
+.profile {
+    display: grid;
+}
+
+@media screen and (min-width: 480px) {
+    .profile {
+        grid-template-columns: calc(128px + 32px) 1fr;
+    }
+}
+
+.name {
     border-bottom: solid 1px #ddd;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    width: 100%;
+}
+
+.profile2 {
+    flex-grow: 1;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
@@ -132,7 +144,6 @@ main {
     height: 128px;
     border-radius: 100%;
     border: solid 5px #ddd;
-    margin-right: 30px;
 }
 
 .name h2 {
@@ -210,7 +221,7 @@ main {
     .particle:nth-child(#{$i}) {
         animation: ease-out particle-animation-#{$i} 20s infinite;
         $size: random(10)+20+px;
-        opacity: random(100)/100;
+        opacity: calc(random(100)/100);
         height: $size;
         width: $size;
         animation-delay: -$i * 1s;
