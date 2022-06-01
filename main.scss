@@ -85,7 +85,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 8px 12px #ddd;
     margin: 15px;
-    width: 250px;
+    width: 200px;
     color: #72b483;
     height: 50px;
 }
@@ -119,8 +119,13 @@ main {
 }
 
 .profile {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+}
+
+@media screen and (min-width: 480px) {
+    .profile {
+        grid-template-columns: calc(128px + 32px) 1fr;
+    }
 }
 
 .name {
@@ -129,9 +134,7 @@ main {
 }
 
 .profile2 {
-    width: 100%;
-    max-width: 400px; // うまくいかないのでとりあえずいれたやつ。後で消す。
-    align-items: flex-end;
+    flex-grow: 1;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
@@ -140,7 +143,6 @@ main {
     height: 128px;
     border-radius: 100%;
     border: solid 5px #ddd;
-    margin-right: 30px;
 }
 
 .name h2 {
@@ -218,7 +220,7 @@ main {
     .particle:nth-child(#{$i}) {
         animation: ease-out particle-animation-#{$i} 20s infinite;
         $size: random(10)+20+px;
-        opacity: random(100)/100;
+        opacity: calc(random(100)/100);
         height: $size;
         width: $size;
         animation-delay: -$i * 1s;
