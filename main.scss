@@ -41,6 +41,18 @@ main {
     padding: 20px;
 }
 
+@media screen and (max-width: 640px) {
+    main{
+        background-color:transparent;
+    }
+    .sites, .profile {
+        background-color: transparent;
+    }
+    .site-links li {
+        background-color: #fff;
+    }
+}
+
 .sites h1 {
     text-align: center;
     line-height: 1ex;
