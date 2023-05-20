@@ -47,6 +47,7 @@ main {
     }
     .sites, .profile {
         background-color: transparent;
+        text-align: center;
     }
     .site-links li {
         background-color: #fff;
@@ -164,6 +165,12 @@ main {
 .social-links ul {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 640px) {
+    .social-links ul {
+        justify-content: space-around;
+    }
 }
 
 .social-links li {
