@@ -1,0 +1,16 @@
+# Site info
+title: "m7u.net -みなゆねっと-"
+description: >-
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://m7u.net" # the base hostname & protocol for your site, e.g. http://example.com
+
+sass:
+   sourcemap: never
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

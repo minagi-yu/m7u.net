@@ -1,0 +1,51 @@
+<div class="card">
+  <img src="https://picsum.photos/200" class="avatar">
+  <div class="container">
+    <div class="name">
+      user_name
+    </div>
+    <hr>
+    <ul class="sns-container">
+      <li>sns_id_10000</li>
+      <li>sns_id_20000</li>
+      <li>sns_id_30000</li>
+      <li>sns_id_40000</li>
+    </ul>
+  </div>
+</div>
+
+
+.card {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 16px;
+  display: grid;
+  grid-gap: 32px;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sns-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
