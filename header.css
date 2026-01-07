@@ -77,10 +77,6 @@ header {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.menu-links {
-    display: none;
-}
-
 .menu-links ul {
     display: flex;
     flex-direction: column;
