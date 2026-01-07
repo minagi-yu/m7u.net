@@ -5,12 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
     <meta name="author" content="{{ site.author.name | escape }}">
     <title>m7u.net -みなゆねっと-</title>
     <link rel="icon" href="favicon.svg">
 </head>
 
 <body>
+    <header>
+        <div class="menu-bar">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label class="menu-button" for="menu-toggle" aria-label="メニューを開閉">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <a class="site-logo" href="/">
+                <img src="minayulab.svg">
+            </a>
+            <nav class="menu-links" aria-label="サイトメニュー">
+                <ul>
+                    <li><a href="#top">あ</a></li>
+                    <li><a href="#links">い</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <div class="sites">
             <h1>
@@ -62,38 +82,8 @@
             </div>
         </div>
     </main>
-    <div class="background_particle">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+    <footer>
+    </footer>
 </body>
 
 </html>
