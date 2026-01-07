@@ -76,7 +76,7 @@ header {
     width: 1rem;
     height: 2px;
     background: #555;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    /* transition: transform 0.2s ease, opacity 0.2s ease; */
 }
 
 .menu-links ul {
