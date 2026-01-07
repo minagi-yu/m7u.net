@@ -19,18 +19,10 @@ a {
 }
 
 main {
-    margin: auto;
-    padding: 10px;
+    margin: 6rem auto 0;
+    padding: 1rem;
+    max-width: 64rem;
     background-color: #ddd;
-    border-radius: 10px;
-    /* position: fixed;
-    right: 50%;
-    bottom: 50%;
-    width: 100%;
-    max-width: 640px;
-    max-height: 100%;
-    overflow-y: auto;
-    transform: translate(50%, 50%); */
 }
 
 .sites,
