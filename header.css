@@ -51,6 +51,7 @@ header {
     margin-top: 1rem;
     margin-left: 2rem;
     order: 3;
+    /* height: calc(100vh - 7rem); */
 }
 
 @media (min-width: 64rem) {
@@ -114,6 +115,7 @@ header {
     .menu-links {
         display: block;
         width: auto;
+        /* height: auto; */
         margin-top: 0;
         order: 0;
     }
