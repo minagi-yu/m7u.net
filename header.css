@@ -48,7 +48,7 @@ header {
 .menu-links {
     display: none;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 2rem;
     order: 3;
     /* height: calc(100vh - 7rem); */
@@ -57,6 +57,7 @@ header {
 @media (min-width: 64rem) {
     .menu-bar {
         width: max-content;
+        padding: 1rem 2rem;
     }
 
     .site-logo {
@@ -81,13 +82,12 @@ header {
 .menu-links ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
     align-items: flex-start;
 }
 
 .menu-links a {
     display: block;
-    padding: 0.25rem 0.5rem;
     text-align: left;
 }
 
