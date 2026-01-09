@@ -10,7 +10,7 @@ header {
     backdrop-filter: blur(0.25rem);
     background-color: rgba(255, 255, 255, 0.6);
     padding: 1rem 1.25rem;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     border-radius: 2rem;
     align-items: center;
     display: flex;
@@ -38,7 +38,7 @@ header {
     margin: 0 auto;
 
     img {
-        height: 1.75rem;
+        height: 2rem;
         vertical-align: middle;
         position: relative;
         top: 0.1rem;
@@ -48,7 +48,6 @@ header {
 .menu-links {
     display: none;
     width: 100%;
-    margin-top: 2rem;
     margin-left: 2rem;
     order: 3;
     /* height: calc(100vh - 7rem); */
@@ -58,10 +57,6 @@ header {
     .menu-bar {
         width: max-content;
         padding: 1rem 2rem;
-    }
-
-    .site-logo {
-        margin-right: 5rem;
     }
 }
 
@@ -79,16 +74,52 @@ header {
     /* transition: transform 0.2s ease, opacity 0.2s ease; */
 }
 
+/* .menu-links a {
+    display: block;
+    text-align: left;
+} */
+
+.menu-links img {
+    vertical-align: middle;
+    height: 1.5rem;
+}
+
 .menu-links ul {
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.menu-page-links,
+.menu-site-links {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     align-items: flex-start;
 }
 
-.menu-links a {
+.menu-social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-page-links a {
+    margin-left: 1rem;
+}
+
+.menu-site-links a,
+.menu-social-links a {
     display: block;
-    text-align: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* border: 1px solid #eee; */
+    border-radius: 1rem;
+}
+
+.menu-site-links a {
+    padding: 0.25rem 1rem;
+}
+
+.menu-social-links a {
+    line-height: 0;
+    padding: 0.25rem 0.25rem;
 }
 
 .menu-toggle:checked~.menu-links {
@@ -113,7 +144,7 @@ header {
     }
 
     .menu-links {
-        display: block;
+        display: flex;
         width: auto;
         /* height: auto; */
         margin-top: 0;
@@ -121,17 +152,22 @@ header {
     }
 
     .menu-links ul {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .menu-links a:hover {
+        background-color: #eee;
+    }
+
+    .menu-page-links,
+    .menu-site-links {
         flex-direction: row;
         align-items: center;
     }
 
-    .menu-links ul li a {
-        padding: 0.25rem 1rem;
+    .menu-page-links a {
+        padding: 0.5rem 1rem;
         border-radius: 1rem;
-    }
-
-    .menu-links ul li a:hover {
-        color: #87b9ce;
-        background-color: #eee;
     }
 }
