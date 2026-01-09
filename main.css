@@ -49,3 +49,109 @@ main {
         }
     }
 }
+
+.link-card {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    margin: 2rem auto 0;
+}
+
+.link-card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: rgba(15, 23, 42, 0.12) 0 8px 24px -12px;
+    backdrop-filter: blur(0.75rem);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card-item:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(15, 23, 42, 0.2) 0 16px 32px -16px;
+}
+
+.link-card-img img {
+    height: 1.75rem;
+    vertical-align: bottom;
+}
+
+.avatar img {
+    height: 8rem;
+    border-radius: 100%;
+    border: solid 3px #eee;
+}
+
+.link-card-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 64rem) {
+    .link-card-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link-card {
+        gap: 1.25rem;
+    }
+
+    .link-card-item {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .link-card-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem auto 0;
+}
+
+.social-link {
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(0.75rem);
+    box-shadow: rgba(15, 23, 42, 0.12) 0 8px 24px -12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(15, 23, 42, 0.2) 0 16px 32px -16px;
+}
+
+.social-link img {
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+}
+
+@media (min-width: 64rem) {
+    .social-links {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .social-link {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+}
