@@ -59,15 +59,29 @@ main {
 .glass-surface>li {
     background: var(--surface-bg);
     border: 1px solid var(--surface-border);
-    box-shadow: var(--surface-shadow);
+    /* box-shadow: var(--surface-shadow); */
     backdrop-filter: blur(0.75rem);
+    /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
+
+.glass-surface>li:has(a[href]:not([href=""])) {
+
+    box-shadow: var(--surface-shadow);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/*
 .glass-surface>li:hover {
     transform: translateY(-2px);
     box-shadow: var(--surface-shadow-hover);
 }
+*/
+
+.glass-surface>li:has(a[href]:not([href=""])):hover {
+    transform: translateY(-2px);
+    box-shadow: var(--surface-shadow-hover);
+}
+
 
 .link-cards {
     display: flex;
@@ -79,7 +93,7 @@ main {
 
 .link-cards>li {
     flex: 1;
-    padding: 1rem 1.25rem;
+    /* padding: 1rem 1.25rem; */
     border-radius: 1.25rem;
     font-size: 1.25rem;
     font-weight: bold;
@@ -88,8 +102,11 @@ main {
 
 .link-cards>li a {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 1.25rem 1.5rem;
     gap: 0.75rem;
     width: 100%;
     height: 100%;
@@ -106,23 +123,9 @@ main {
     border: solid 3px #eee;
 }
 
-@media (max-width: 64rem) {
-    .link-cards {
-        gap: 1.25rem;
-    }
-
-    .link-cards>li {
-        padding: 1.25rem 1.5rem;
-    }
-
+@media (min-width: 64rem) {
     .link-cards>li a {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .link-card-icon {
-        width: 3.5rem;
-        height: 3.5rem;
+        flex-direction: row;
     }
 }
 
