@@ -10,7 +10,6 @@ header {
     backdrop-filter: blur(0.25rem);
     background-color: rgba(255, 255, 255, 0.6);
     padding: 1rem 1.25rem;
-    /* border: 1px solid #eee; */
     border-radius: 2rem;
     align-items: center;
     display: flex;
@@ -50,7 +49,6 @@ header {
     width: 100%;
     margin-left: 2rem;
     order: 3;
-    /* height: calc(100vh - 7rem); */
 }
 
 @media (min-width: 64rem) {
@@ -71,13 +69,7 @@ header {
     width: 1rem;
     height: 2px;
     background: #555;
-    /* transition: transform 0.2s ease, opacity 0.2s ease; */
 }
-
-/* .menu-links a {
-    display: block;
-    text-align: left;
-} */
 
 .menu-links img {
     vertical-align: middle;
@@ -109,7 +101,6 @@ header {
 .menu-social-links a {
     display: block;
     background-color: rgba(255, 255, 255, 0.6);
-    /* border: 1px solid #eee; */
     border-radius: 1rem;
 }
 
@@ -146,7 +137,6 @@ header {
     .menu-links {
         display: flex;
         width: auto;
-        /* height: auto; */
         margin-top: 0;
         order: 0;
     }
