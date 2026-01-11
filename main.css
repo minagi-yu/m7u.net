@@ -29,7 +29,7 @@ a {
 
 main {
     margin: 0 auto;
-    padding: 7rem 0 0;
+    padding: 7rem 1rem 1rem;
     max-width: 64rem;
 }
 
@@ -83,18 +83,12 @@ main {
     box-shadow: var(--surface-shadow-hover);
 }
 
-.link-cards,
-.social-links {
-    margin: 0 1rem;
-}
-
 
 .link-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    /* margin: 2rem auto 0; */
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     padding: 0;
 }
 
@@ -140,8 +134,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 0.75rem;
-    /* margin: 1.5rem auto 0; */
-    margin-top: 2rem;
+    margin: 1.5rem auto 0;
     padding: 0;
 }
 
