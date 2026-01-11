@@ -15,6 +15,7 @@ body {
     font-family: sans-serif;
     background: linear-gradient(135deg, hsl(215, 100%, 94%), hsl(150, 93%, 96%) 50%, hsl(109, 87%, 94%));
     min-height: 100vh;
+    min-width: 20rem;
 }
 
 li {
@@ -28,7 +29,7 @@ a {
 
 main {
     margin: 0 auto;
-    padding: 7rem 1rem 1rem;
+    padding: 7rem 0 0;
     max-width: 64rem;
 }
 
@@ -82,12 +83,18 @@ main {
     box-shadow: var(--surface-shadow-hover);
 }
 
+.link-cards,
+.social-links {
+    margin: 0 1rem;
+}
+
 
 .link-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 2rem auto 0;
+    /* margin: 2rem auto 0; */
+    margin-top: 2rem;
     padding: 0;
 }
 
@@ -133,7 +140,8 @@ main {
     display: flex;
     justify-content: center;
     gap: 0.75rem;
-    margin: 1.5rem auto 0;
+    /* margin: 1.5rem auto 0; */
+    margin-top: 2rem;
     padding: 0;
 }
 
