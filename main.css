@@ -13,9 +13,19 @@
 
 body {
     font-family: sans-serif;
-    background: linear-gradient(135deg, hsl(215, 100%, 94%), hsl(150, 93%, 96%) 50%, hsl(109, 87%, 94%));
     min-height: 100vh;
     min-width: 20rem;
+}
+
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    z-index: -1;
+    background: linear-gradient(135deg, hsl(215, 100%, 94%), hsl(150, 93%, 96%) 50%, hsl(109, 87%, 94%));
 }
 
 li {
