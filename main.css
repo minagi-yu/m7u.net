@@ -43,7 +43,7 @@ main {
     max-width: 64rem;
 }
 
-.site-logo {
+.site-logo h1 {
     margin: 2rem auto;
     text-align: center;
     font-size: 1.5rem;
@@ -57,7 +57,7 @@ main {
 }
 
 @media (min-width: 64rem) {
-    .site-logo {
+    .site-logo h1 {
         margin: 3rem auto;
         font-size: 2rem;
 
