@@ -1,1 +1,12 @@
 title: "m7u.net -みなゆねっと-"
+description: "みなぎゆうの個人サイト"
+lang: ja
+timezone: Asia/Tokyo
+url: "https://m7u.net"
+baseurl: ""
+permalink: none
+
+exclude:
+  - README.md
+  - vendor
+  - node_modules
