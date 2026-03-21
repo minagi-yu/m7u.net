@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/style-sheets/common.css">
+  <link rel="stylesheet" href="/assets/style-sheets/header.css">
+  <link rel="stylesheet" href="/assets/style-sheets/footer.css">
+  {% if page.layout == "home" %}
+  <link rel="stylesheet" href="/assets/style-sheets/home.css">
+  {% elsif page.layout == "article" %}
+  <link rel="stylesheet" href="/assets/style-sheets/article.css">
+  {% endif %}
+  <link rel="icon" href="/assets/favicon.svg">
+  <title>
+    {% if page.title %}{{ page.title | escape }} - {% endif %}
+    {{ site.title | escape }}
+  </title>
+</head>

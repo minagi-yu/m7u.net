@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article>
+  <header class="article-title">
+    <img class="title-icon" src="{% if page.title-icon %}{{ page.title-icon | escape }}{% endif %}" alt="アイコン">
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+  <section class="article-body">
+    {{ content }}
+  </section>
+</article>
