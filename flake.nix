@@ -20,7 +20,7 @@
       devShells = forAllSystems (
         pkgs:
         let
-          ruby = pkgs.ruby_3_3;
+          ruby = pkgs.ruby_3_1;
         in
         {
           default = pkgs.mkShell {
