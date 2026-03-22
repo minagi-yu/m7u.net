@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: "みなぎ🌱@minagi_yu"
 title-icon: "assets/avatar.png"
 ---
